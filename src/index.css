@@ -9,7 +9,7 @@ body {
     height: 100vh;
     display: flex;
 }
-
+ 
 /* Landing text */
 .left-side {
     float: left;

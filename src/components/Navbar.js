@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
 import { Link, BrowserRouter } from 'react-router-dom';
+import { FaBars, FaTimes, FaPython } from 'react-icons/fa'
 import './Navbar.css';
 
 function Navbar() {
@@ -25,18 +26,19 @@ function Navbar() {
   window.addEventListener('resize', showButton);
 
   return (
-    <BrowserRouter>
       <nav className='navbar'>
         <div className='navbar-container'>
           <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+            <FaPython className="navbar-logo" />
             LOGO
           </Link>
           <div className='menu-icon' onClick={handleClick}>
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+            {click ? <FaTimes/> : <FaBars/>}
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='/' className='nav-links' onClick={closeMobileMenu}
+              >
                 Home
               </Link>
             </li>
@@ -58,11 +60,11 @@ function Navbar() {
                 Sign Up
               </Link>
             </li>
+            <Button buttonStyle='btn--outline'>SIGN UP</Button>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
         </div>
+        
       </nav>
-    </BrowserRouter>
   );
 }
 

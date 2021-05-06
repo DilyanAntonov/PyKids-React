@@ -32,7 +32,8 @@ export default function Editor(props) {
                     mode: language,
                     theme: 'material',
                     lineNumbers: true,
-                    indentUnit: 20
+                    indentUnit: 20,
+                    value: "🥪 = [🍞,🥓,🧀]\n🥪 += 🍅\n\nprint(🥪)\n\n\n\n\n\n"
                 }}
             />
         </div>
