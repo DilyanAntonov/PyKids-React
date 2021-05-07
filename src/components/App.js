@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 function App() {
 
-  const [python, setPython] = useLocalStorage('python', '')
+  const [python, setPython] = useState('🥪 = [🍞,🥓,🧀]\n\n#Forgot tomatoes... \n🥪 += 🍅\n\nprint(🥪)\n\n\n')
 
   return (
     <>
@@ -33,6 +33,7 @@ function App() {
             <Editor 
               language="python" 
               displayName="Let's make a 🥪" 
+              textvalue={"🥪 = [🍞,🥓,🧀]\n🥪 += 🍅\n\nprint(🥪)\n\n\n\n\n\n"}
               value={python} 
               onChange={setPython} 
             />
