@@ -1,47 +1,30 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
-import Editor from './Editor';
-import { Button } from './Button';
-import useLocalStorage from '../hooks/useLocalStorage'
-import { BrowserRouter } from 'react-router-dom';
+import LandingPage from './LandingPage';
+import TaskPage from './TaskPage';
+import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 
 function App() {
 
-  const [python, setPython] = useState('🥪 = [🍞,🥓,🧀]\n\n#Forgot tomatoes... \n🥪 += 🍅\n\nprint(🥪)\n\n\n')
-
   return (
-    <>
       <BrowserRouter>
         <Navbar />
-        <div className="left-side">
-          <div className="pane">
-            <div className="main-text-block">
-              <h1 className="main-text">Learn Coding</h1>
-              <h3 className="secondary-text">The fun way</h3>
-              <Button
-                className='btns'
-                buttonStyle='btn--outline'
-                buttonSize='btn--large'
-                >
-                SIGN UP
-              </Button>
-            </div>
-          </div>
-        </div>
-        <div className="right-side">
-          <div className="pane">
-            <Editor 
-              language="python" 
-              displayName="Let's make a 🥪" 
-              textvalue={"🥪 = [🍞,🥓,🧀]\n🥪 += 🍅\n\nprint(🥪)\n\n\n\n\n\n"}
-              value={python} 
-              onChange={setPython} 
-            />
-          </div>
+        <div>
+          <Switch>
+            <Route exact path="/">
+              <LandingPage />
+            </Route>
+            <Route exact path="/example1">
+              <TaskPage />
+            </Route>
+            <Route exact path="/example2">
+              <h1>EXAMPLE 2 PAGE</h1>
+            </Route>
+          </Switch>
         </div>
     </BrowserRouter>
-    </>
   );
 }
+
 
 export default App;

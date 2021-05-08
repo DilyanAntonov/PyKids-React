@@ -12,6 +12,7 @@ export default function Editor(props) {
         language,
         displayName,
         textvalue,
+        resultvalue,
         value,
         onChange,
     } = props;
@@ -37,13 +38,16 @@ export default function Editor(props) {
                 options={{
                     lineWrapping: true,
                     lint: true,
-                    value: "🥪 = [🍞,🥓,🧀]\n🥪 += 🍅\n\nprint(🥪)",
+                    value: textvalue,
                     mode: language,
                     theme: 'material',
                     lineNumbers: true,
                     indentUnit: 20,
                 }}
             />
+            <textarea className="result-container">
+                {resultvalue}
+            </textarea>
         </div>
     )
 }

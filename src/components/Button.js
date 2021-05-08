@@ -14,7 +14,7 @@ import React from 'react';
 import './Button.css';
 import { Link, BrowserRouter  } from 'react-router-dom';
 
-const STYLES = ['btn--primary', 'btn--outline', 'btn--test'];
+const STYLES = ['btn--primary', 'btn--outline', 'btn--test', 'btn--hint'];
 
 const SIZES = ['btn--medium', 'btn--large', 'btn--mobile'];
 

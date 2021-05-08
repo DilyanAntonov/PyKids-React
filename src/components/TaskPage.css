@@ -1,0 +1,13 @@
+.task-title {
+    font-size: 50px;
+    margin-top: -3rem;
+}
+
+.tast-text {
+    font-size: 20px;
+}
+
+.hint-text {
+    display: none;
+    font-size: 20px;
+}

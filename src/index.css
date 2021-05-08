@@ -70,6 +70,17 @@ body {
     align-items: center;
 }
 
+.result-container {
+    margin-top: .5rem;
+    width: 99%;
+    height: 60px;
+    border-radius: .5rem;
+    resize: none;
+    font-size: 40px;
+    line-height:60px;
+    overflow:hidden;
+}
+
 .CodeMirror  {
     height: 100% !important;
     font-size: 40px;
