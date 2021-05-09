@@ -4,7 +4,13 @@ import './TaskPage.css'
 
 import { Button } from './Button';
 
-export default function TaskPage() {
+export default function TaskPage(props) {
+    const {
+        taskTitle,
+        tastText,
+        taskHintText,
+        tastEditorTitle
+    } = props;
 
   const [python, setPython] = useState("")
 
@@ -23,15 +29,17 @@ export default function TaskPage() {
             <div className="pane">
                 <div className="main-text-block">
                     <h1 className="task-title">
-                        Task Name
+                        {taskTitle}
                     </h1>
                     <p className="tast-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in libero id enim convallis faucibus eu in tellus. In ut tempor orci. Praesent vitae urna tristique lorem suscipit cursus non at augue. Nam non viverra diam, in convallis elit. Nulla dolor libero, mattis eu urna quis, efficitur imperdiet odio. Nunc ornare finibus massa non malesuada. Duis feugiat tortor varius, congue quam sit amet, vestibulum quam. Sed condimentum libero vitae facilisis commodo. Sed egestas eget diam vel egestas.                     
+                        {tastText}                     
+                    </p>
+                    <p id="hint-text" className="hint-text">
+                        {taskHintText}
                     </p>
                     <Button buttonStyle='btn--hint' onClick={unhide}>HINT</Button>
-                    <p id="hint-text" className="hint-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in libero id enim convallis faucibus eu in tellus. In ut tempor orci. Praesent vitae urna tristique lorem suscipit cursus non at augue.
-                    </p>
+                    <Button buttonStyle='btn--solution' onClick={unhide}>SOLUTION</Button>
+
                 </div>
             </div>
         </div>
@@ -39,7 +47,7 @@ export default function TaskPage() {
             <div className="pane">
                 <Editor 
                 language="python" 
-                displayName="SOME NAME" 
+                displayName={tastEditorTitle} 
                 textvalue={""}
                 resultvalue={""}
                 value={python} 

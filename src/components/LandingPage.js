@@ -28,7 +28,7 @@ export default function LandingPage() {
                 <Editor 
                 language="python" 
                 displayName="Let's make a 🥪" 
-                textvalue={"🥪 = [🍞,🥓,🧀]\n🥪 += 🍅\n\nprint(🥪)"}
+                textvalue={"🥪 = [🍞,🥓,🧀]\n\n# Forgot tomatoes... \n🥪 += 🍅\n\nprint(🥪)"}
                 resultvalue={"🍞,🥓,🧀,🍅"}
                 value={python} 
                 onChange={setPython} 

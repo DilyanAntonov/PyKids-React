@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
-import { Link, BrowserRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { FaBars, FaTimes, FaPython } from 'react-icons/fa'
 import './Navbar.css';
 
@@ -28,9 +28,13 @@ function Navbar() {
   return (
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            <FaPython className="navbar-logo" />
-            LOGO
+          <Link 
+            to='/' 
+            className='navbar-logo' 
+            onClick={closeMobileMenu}
+            >
+              <FaPython className="navbar-logo" />
+              LOGO
           </Link>
           <div className='menu-icon' onClick={handleClick}>
             {click ? <FaTimes/> : <FaBars/>}
