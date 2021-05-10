@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import 'codemirror/lib/codemirror.css'
-import 'codemirror/theme/material.css'
+import 'codemirror/theme/darcula.css'
 import 'codemirror/mode/python/python'
 import { Controlled as ControlledEditor } from 
 'react-codemirror2'
@@ -40,7 +40,7 @@ export default function Editor(props) {
                     lint: true,
                     value: textvalue,
                     mode: language,
-                    theme: 'material',
+                    theme: 'darcula',
                     lineNumbers: true,
                     indentUnit: 20,
                 }}

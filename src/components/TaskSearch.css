@@ -1,0 +1,24 @@
+.btn-group button {
+    background-color: #5c5c5c; /* Green background */
+    border: none; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 100%; /* Set a width if needed */
+    display: block; /* Make the buttons appear below each other */
+    font-size: 30px;
+    margin-top: .2rem;
+  }
+
+.btn-group {
+    margin-top: -7rem;
+}
+
+.btn:first-child {
+    border-top-left-radius: 5rem;
+}
+  
+/* Add a background color on hover */
+.btn-group button:hover {
+background-color: #e46a1a;
+}

@@ -1,6 +1,10 @@
+:root {
+    --background-color: rgb(13, 31, 15);
+}
+
 body {
     margin: 0;
-    background-color: hsl(255, 6%, 25%);
+    background: rgb(159, 77, 236);
 }
 
 .pane {
@@ -38,7 +42,6 @@ body {
     display: flex;
     flex-direction: column;
     padding: 10rem 8rem 5rem 2rem;
-    background-color: hsl(255, 6%, 25%);
 }
 
 .right-side {
