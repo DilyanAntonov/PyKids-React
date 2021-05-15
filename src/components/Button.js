@@ -1,20 +1,7 @@
-// import React from 'react';
-// import './Button.css';
-// import { Link } from 'react-router-dom';
-
-// export function Button() {
-//   return (
-//     <Link to='sign-up'>
-//       <button className='btn'>Sign Up</button>
-//     </Link>
-//   );
-// }
-
 import React from 'react';
 import './Button.css';
-import { Link, BrowserRouter  } from 'react-router-dom';
 
-const STYLES = ['btn--primary', 'btn--outline', 'btn--test', 'btn--hint', 'btn--solution'];
+const STYLES = ['btn--primary', 'btn--outline', 'btn--test', 'btn--hint', 'btn--solution', 'btn--menu'];
 
 const SIZES = ['btn--medium', 'btn--large', 'btn--mobile'];
 

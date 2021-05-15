@@ -1,0 +1,23 @@
+.card-container {
+    margin-top: 4rem;
+    margin-right: 1rem;
+    border-radius: 15px;
+    width: 15rem;
+}
+
+.card-title {
+    margin-top: 0.2rem;
+    font-size: 50px;
+    text-align: center;
+}
+
+.card-text {
+    height: 6vh;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 30px;
+    background-color: rgb(122, 122, 122);
+    text-align: center;
+
+
+}

@@ -3,6 +3,7 @@
     --secondary: #fe5000;
     --hint: rgb(49, 141, 76);
     --solution: #ee3000;
+    --menu: #ff0800;
 }
 
 .btn {
@@ -59,6 +60,23 @@
   transition: 250ms;
 }
 
+.btn--menu {
+  background-color: transparent;
+  color: var(--primary);
+  width: 100%;
+  margin-top: 1rem;
+  padding: 8px 20px;
+  border: 3px solid var(--menu);
+  transition: all 0.3s ease-out;
+}
+
+.btn--menu:hover {
+  transition: all 0.3s ease-out;
+  background: var(--menu) !important;
+  color: #fff;
+  transition: 250ms;
+}
+
 .btn--medium {
   padding: 8px 20px;
   font-size: 18px;
@@ -90,4 +108,3 @@
   color: #fff;
   transition: 250ms;
 }
-

@@ -1,9 +1,8 @@
 .navbar {
     height: 80px;
-    display: flex;
+    /* display: flex; */
     font-size: 1.2rem;
     position: sticky;
-    padding-left: 10rem;
   }
   
 .navbar-container {
@@ -30,7 +29,6 @@
   text-align: center;
   justify-content: end;
   width: 100vw;
-  margin-left: -28rem;
 }
 
 .nav-item {
